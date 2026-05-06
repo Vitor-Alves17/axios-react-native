@@ -3,6 +3,7 @@ import {api} from "./src/services/api";
 import {ScrollView, TextInput, View, Image, Text} from "react-native";
 import {styles} from "./src/styles/styles";
 import Card from "./src/components/Card";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 export default function App(){
@@ -29,7 +30,7 @@ export default function App(){
   }
 
   return (
-      <View style={styles.container}>
+      <SafeAreaProvider style={styles.container}>
           <TextInput style={styles.input}
                      placeholder="Insert the product name: "
                      value={search}
@@ -42,7 +43,7 @@ export default function App(){
                   <Card product={product} />
               ))}
           </ScrollView>
-      </View>
+      </SafeAreaProvider>
 
 
   )
