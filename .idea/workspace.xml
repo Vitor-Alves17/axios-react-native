@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4c7f23a-a92f-4349-8694-38baac0ecaaa" name="Changes" comment="wip: use SafeAreaProvider instead of SafeAreaView">
+    <list default="true" id="f4c7f23a-a92f-4349-8694-38baac0ecaaa" name="Changes" comment="fix: use SafeAreaProvider instead of SafeAreaView">
+      <change afterPath="$PROJECT_DIR$/src/routes/AppNavigator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/DetailsScreen.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/HomeScreen.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1777578106085</updated>
       <workItem from="1777578107164" duration="4459000" />
-      <workItem from="1778097335978" duration="1255000" />
+      <workItem from="1778097335978" duration="2874000" />
     </task>
     <task id="LOCAL-00001" summary="feat: created api consume project with react-native">
       <option name="closed" value="true" />
@@ -147,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778097522115</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: use SafeAreaProvider instead of SafeAreaView">
+      <option name="closed" value="true" />
+      <created>1778098621560</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778098621560</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: created api consume project with react-native" />
     <MESSAGE value="wip: use SafeAreaProvider instead of SafeAreaView" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: use SafeAreaProvider instead of SafeAreaView" />
+    <MESSAGE value="fix: use SafeAreaProvider instead of SafeAreaView" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: use SafeAreaProvider instead of SafeAreaView" />
   </component>
 </project>

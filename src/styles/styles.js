@@ -75,5 +75,53 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         gap: 5,
         flexWrap: 'wrap',
-    }
+    },
+    safeContainer: {
+        flex: 1,
+        backgroundColor: "#F5F5F5",
+    },
+    detailsContainer: {
+        padding: 20,
+        alignItems: "center",
+    },
+    detailsImage: {
+        width: 200,
+        height: 200,
+        marginBottom: 20,
+        borderRadius: 10,
+    },
+    detailsTitle: {
+        fontSize: 22,
+        fontWeight: "bold",
+        textAlign: "center",
+        marginBottom: 10,
+    },
+    detailsCategory: {
+        fontSize: 16,
+        color: "#666",
+        marginBottom: 10,
+    },
+    detailsPrice: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "#2ecc71",
+        marginBottom: 15,
+    },
+    detailsDescription: {
+        fontSize: 14,
+        color: "#444",
+        textAlign: "center",
+        lineHeight: 20,
+    },
+    category: {
+        fontSize: 14,
+        color: "#888",
+        marginTop: 5,
+    },
+    price: {
+        fontSize: 16,
+        fontWeight: "bold",
+        color: "#2ecc71",
+        marginTop: 8,
+    },
 })

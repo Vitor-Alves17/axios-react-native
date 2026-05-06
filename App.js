@@ -1,51 +1,10 @@
-import {useEffect, useState} from "react";
-import {api} from "./src/services/api";
-import {ScrollView, TextInput, View, Image, Text} from "react-native";
-import {styles} from "./src/styles/styles";
-import Card from "./src/components/Card";
-import {SafeAreaProvider} from "react-native-safe-area-context";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import AppNavigator from "./src/routes/AppNavigator";
 
-
-
-export default function App(){
-  const [products, setProducts] = useState([])
-  const [search, setSearch] = useState('')
-
-  useEffect(() => {
-    async function loadProducts(){
-        try {
-          const res = await api.get('products');
-          setProducts(res.data);
-        } catch (error){
-          console.log("Erro: " + error);
-        }
-    }
-    loadProducts();
-  }, []);
-
-    const filteredProducts = products.filter(product =>
-        product.title.toLowerCase().includes(search.toLowerCase())
+export default function App() {
+    return (
+        <SafeAreaProvider>
+            <AppNavigator />
+        </SafeAreaProvider>
     );
-  const handleSearch = (text) => {
-    setSearch(text);
-  }
-
-  return (
-      <SafeAreaProvider style={styles.container}>
-          <TextInput style={styles.input}
-                     placeholder="Insert the product name: "
-                     value={search}
-                     onChangeText={handleSearch}
-          />
-          <Text style={styles.title}>Resultado(s) da pesquisa </Text>
-
-          <ScrollView contentContainerStyle={styles.cardContainer}>
-              {filteredProducts.map(( product ) => (
-                  <Card product={product} />
-              ))}
-          </ScrollView>
-      </SafeAreaProvider>
-
-
-  )
 }
