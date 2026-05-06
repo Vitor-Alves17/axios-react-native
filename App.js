@@ -3,7 +3,8 @@ import {api} from "./src/services/api";
 import {ScrollView, TextInput, View, Image, Text} from "react-native";
 import {styles} from "./src/styles/styles";
 import Card from "./src/components/Card";
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import {SafeAreaProvider} from "react-native-safe-area-context";
+
 
 
 export default function App(){
