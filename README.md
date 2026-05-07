@@ -56,6 +56,7 @@ Aplicativo mobile para listar produtos da [FakeStore API](https://fakestoreapi.c
 
 ## 📂 Configuração e Estrutura de Pastas
 
+```text
 axios-react-native/
 ├── App.js # Ponto de entrada
 ├── src/
@@ -73,3 +74,4 @@ axios-react-native/
 ├── assets/ # Ícones e splash
 ├── package.json
 └── app.json
+```
